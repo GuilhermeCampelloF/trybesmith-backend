@@ -4,3 +4,5 @@ export type Product = {
   price: 'fake';
   userId: 'fake';
 };
+
+// initial commit
