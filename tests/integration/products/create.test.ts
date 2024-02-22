@@ -21,14 +21,14 @@ describe('POST /products', function () {
   it('Testa se não é possível cadastrar um produto caso não informado o "name"', async function() {
     const httpRequestBody = productMock.noNameProductBody;
     const httpResponse = await chai.request(app).post('/products').send(httpRequestBody);
-    expect(httpResponse.status).to.equal(422);
-    expect(httpResponse.body).to.be.deep.equal({ message: 'Name is required' });
+    expect(httpResponse.status).to.equal(400);
+    expect(httpResponse.body).to.be.deep.equal({ message: '"name" is required' });
   })
 
   it('Testa se não é possível cadastrar um produto caso não informado o "price"', async function() {
     const httpRequestBody = productMock.noPriceProductBody;
     const httpResponse = await chai.request(app).post('/products').send(httpRequestBody);
-    expect(httpResponse.status).to.equal(422);
-    expect(httpResponse.body).to.be.deep.equal({ message: 'Price is required' });
+    expect(httpResponse.status).to.equal(400);
+    expect(httpResponse.body).to.be.deep.equal({ message: '"price" is required' });
   })
 });
