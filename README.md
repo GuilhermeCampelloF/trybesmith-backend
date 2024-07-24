@@ -115,12 +115,12 @@ Toda a parte de criação do banco de dados, das tabelas, seeders e _models_ do 
 <summary><strong>Validações para a criação de produtos e respectivos testes</strong></summary>
 <br>
 
-- Validações referentes ao endpoint `POST /products`;
+- Validações referentes ao endpoint `POST /products`.
 
 </details>
 
 ## ©️ DISCLAIMER
 
 <div align="justify">
-Com exceção das alterações destacadas acima no tópico "implementações realizadas", <b>TODOS OS DEMAIS ARQUIVOS</b> foram desenvolvidos e estão sob responsabilidade da TRYBE, incluindo, mas não se limitando ao: diagrama entidade-relacionamento do sistema, seeders, containers docker e organização dos demais diretórios da aplicação.
+Com exceção das alterações destacadas acima no tópico "implementações realizadas", <b>TODOS OS DEMAIS ARQUIVOS</b> foram desenvolvidos e estão sob responsabilidade da TRYBE, incluindo, mas não se limitando aos: models, database, seeders, containers docker e organização dos demais diretórios da aplicação.
 </div>
